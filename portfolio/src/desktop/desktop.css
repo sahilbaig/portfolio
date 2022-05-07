@@ -1,0 +1,11 @@
+
+.fill-window {
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    /* display: flex; */
+    /* justify-content:left ; */
+    /* flex-direction: row; */
+}
