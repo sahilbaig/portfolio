@@ -1,0 +1,28 @@
+nav{
+    display: flex;
+    padding: 20px 10px;
+    font-size: 20px;
+    color: black;
+    align-items: center;
+    
+}
+
+
+nav>div{
+    margin-left: auto;   
+}
+
+nav>div>a{
+    margin-left: 10px;
+   
+}
+
+nav > div > a:hover {
+    color: salmon;
+    border-bottom: 2px solid salmon;
+}
+
+nav > div > a:focus {
+    color: salmon;
+    border-bottom: 2px solid salmon;
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+
+.project-container{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10%;
+    align-items: center;
+    padding-right: 10%;
+    margin-bottom: 5%;
+}
+
+.project-desc{
+    margin-left: 10px;
+
+}
+
+.project-desc>p>span{
+    color: grey;
+    margin-left: 10px;
+}
+.project-img{
+    margin-left: auto;
+    font-size: 40px;
+    max-width: 400px;
+    min-width:400px;
+    max-height:150px;
+}
