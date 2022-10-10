@@ -1,32 +1,59 @@
 import { useState } from "react"
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
 function Project (){
-
-    const [status,setStatus]=useState(false)
-    const [password,setPassword]=useState("")
-    const [content,setContent]=useState("")
+    const [password,setPassword]=useState(false)
     
     const handlePassword =(e)=>{
         setPassword(e.target.value)
+        
     }
+    
     const showContent = () =>{
         if(password=="hello"){
             setContent("wow")
         }
-        else{
-            setContent("enter password")
-        }
     } 
+
+
+
+    const [content,setContent]=useState()
+    
+    
+    
+
+
+    
     return(
-        <div>
-            <button onClick={()=>{
-                showContent()
-            }}>Click kar ke dekh na</button>
+            <div id="password-field">
+                <div>
+                <TextField
+                    id="standard-password-input"
+                    label="Password"
+                    type="password"
+                    autoComplete="current-password"
+                    variant="standard"
+                    onChange={(e)=>{
+                        handlePassword(e)
+                    }}
+                />
 
-            <input type="text" value={password} onChange={handlePassword}></input>
-            <h1>{content}</h1>
+                <Button
+                    onClick={()=>{
+                        showContent()
+                    }
+                    }
+                >Reveal content
+                </Button>
+                </div>
+                
 
-        </div>
+                <div>
+                    {content}
+                </div>
+                
+            </div>
     )
 }
 

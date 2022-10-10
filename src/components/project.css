@@ -7,10 +7,15 @@
     align-items: center;
     padding-right: 10%;
     margin-bottom: 5%;
+    margin-top: 5%;
+    
 }
 
 .project-desc{
+    
     margin-left: 10px;
+    flex-grow: 10;
+
 
 }
 
@@ -19,9 +24,14 @@
     margin-left: 10px;
 }
 .project-img{
+    /* border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important; */
+    flex-grow: 1;
     margin-left: auto;
-    font-size: 40px;
-    max-width: 400px;
-    min-width:400px;
-    max-height:150px;
+    max-width: 500px;
 }
+.project-img>img{
+   max-height: 70%;
+    
+}
+
+
